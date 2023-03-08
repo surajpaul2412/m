@@ -1,0 +1,102 @@
+/* 
+    Primary Color: #03a8b5;
+    Secondry Color: #5aa2de
+*/
+
+:root { 
+    --body-font-family: 'Poppins', Arial, Tahoma;  
+    --primary-color: #5aa2de; 
+    /* --secondary-color: #0058c3;   */
+    --text-color: #222222;
+} 
+
+.newsletterbg, #siteNav > li > a:after {
+    background-color: var(--primary-color) !important;
+}
+.head-change-color, .store-info i, .product-price .old-price + .price, a:hover, a:active, .iconset:hover .icon, .iconset:hover .text, .iconset:hover a {
+    color: var(--primary-color) !important;
+} 
+
+
+
+.section{ 
+    padding: 70px 0;
+}
+
+.bg-gray {
+    background-color: #f1f1f1;
+}
+.w-90 { width: 90%; }
+
+
+.btn:hover, .btn-primary:hover, .btn:focus, .btn-primary:focus {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* Header Css */
+ 
+.counter { 
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;  
+}
+
+
+
+/* category carousel Css */
+.category-carousel .category-item img {
+    width: 64px;
+    padding: 10px;
+    background-color: rgb(90 162 222 / 21%);
+    border-radius: 50%;
+} 
+
+/* Product Box Css */
+.grid-products .product-review {
+    margin: 0 0 0;
+}
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
+
+
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
+
