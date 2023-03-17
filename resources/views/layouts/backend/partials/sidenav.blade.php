@@ -2,14 +2,15 @@
     <div data-simplebar class="h-100">
         <div id="sidebar-menu">
             <ul class="metismenu list-unstyled" id="side-menu">
-                <li>
-                    <a href="./" class="waves-effect">
+                @if(Request::is('admin*'))
+                <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                    <a href="{{route('admin.dashboard')}}" class="waves-effect">
                         <i class="bx bx-home-circle"></i>
                         <span key="t-chat">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="users.php" class="waves-effect">
+                <li class="{{ Request::is('admin/customers') ? 'active' : '' }}">
+                    <a href="{{route('admin.customers')}}" class="waves-effect">
                         <i class="bx bx-user"></i>
                         <span key="t-chat">Customers</span>
                     </a>
@@ -20,9 +21,9 @@
                         <span key="t-dashboards">Sellers</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false"> 
-                        <li><a href="sellers.php">All Seller</a></li>  
-                        <li><a href="#">Verified Seller</a></li>   
-                        <li><a href="#">Unverified Seller</a></li>   
+                        <!-- <li><a href="">All Seller</a></li>   -->
+                        <li><a href="{{route('admin.verified-sellers')}}">Verified Seller</a></li>   
+                        <li><a href="{{route('admin.unverified-sellers')}}">Unverified Seller</a></li>   
                     </ul>
                 </li>
                 <li>
@@ -84,7 +85,7 @@
                         <span key="t-dashboards">Appearance</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">  
-                        <li><a href="banners.php">Home Banner</a></li>  
+                        <li><a href="{{route('admin.banners')}}">Home Banner</a></li>  
                         <li><a href="#">Testimonials</a></li> 
                         <li><a href="pages.php">Pages</a></li> 
                     </ul>
@@ -141,6 +142,13 @@
                         <li><a href="#">Login Configuration</a></li>   
                     </ul>
                 </li>
+                @endif
+
+                @if(Request::is('seller*'))
+                @endif
+
+                @if(Request::is('customer*'))
+                @endif
             </ul>
         </div> 
     </div>

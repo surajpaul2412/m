@@ -17,7 +17,11 @@
 <script src="{{asset('backend/admin/libs/ckeditor/multiple_ckeditor.js')}}"></script>
 
 <!-- Sweet Alerts js -->
-<script src="{{asset('backend/admin/libs/sweetalert2/sweetalert2.min.js')}}"></script>  
+<!-- <script src="{{asset('backend/admin/libs/sweetalert2/sweetalert2.min.js')}}"></script>   -->
+
+<!-- sweet alert Js -->
+<script src="{{asset('backend/js/plugins/sweetalert.min.js')}}"></script> 
+<script src="{{asset('backend/js/pages/ac-alert.js')}}"></script> 
 
 <!-- Required datatable js -->
 <script src="{{asset('backend/admin/libs/datatables.net/js/jquery.dataTables.min.js')}}"></script>

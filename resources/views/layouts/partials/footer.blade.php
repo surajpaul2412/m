@@ -1,122 +1,82 @@
-    <!-- Start: footer -->
-    <footer class="main-footer">
-        <div class="top-footer py-5">  
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 pe-5">
-                        <h5>{{dynamicLang('Contact with Us')}}</h5>
-                        <ul class="contacts">
-                            <li><a href="tel://919999585812"><i class="ti-mobile"></i> + 61 23 8093 3400</a></li>
-                            <li><a href="mailto:info@getbeds.in"><i class="ti-email"></i> info@getbeds.in</a></li>
-                        </ul>
-                        <div id="newsletter">
-                            <h6>{{dynamicLang('Newsletter')}}</h6>
-                            <div id="message-newsletter"></div>
-                            <form method="post" action="{{route('newsletter.store')}}" name="newsletter_form" id="newsletter_form">
-                                @csrf
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email_newsletter" class="form-control @error('email') is-invalid @enderror" placeholder="Your email" required>
-                                    @error('email')
-                                        <div class="text-danger">
-                                            <strong>{{ $message }}</strong>
-                                        </div>
-                                    @enderror
-                                    <input type="submit" value="{{dynamicLang('Submit')}}" id="submit-newsletter">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="follow_us">
-                            <ul>
-                                <li>{{dynamicLang('Follow us')}}</li>
-                                <li><a href="#0"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#0"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#0"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#0"><i class="ti-google"></i></a></li> 
-                            </ul>
-                        </div>
+<!-- [ Footer ] start-->
+<div class="footer footer-24">
+    <div class="newsletterbg">
+        <div class="container">
+            <form action="#" method="post" class="footer-newsletter">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3 mb-md-0">
+                        <label class="h5 body-font mb-1 text-uppercase">Newsletter subscription</label>
+                        <p>Sign up to stay in the loop. Receive updates, access to exclusive deals</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 ms-lg-auto">
-                        <h5>{{dynamicLang('Useful links')}}</h5>
-                        <ul class="links">
-                            <li><a href="#0">{{dynamicLang('About')}}</a></li> 
-                            <li><a href="#0">{{dynamicLang('Contacts')}}</a></li>
-                            <li><a href="#0">{{dynamicLang('Register')}}</a></li> 
-                            <li><a href="#0">{{dynamicLang('Privacy Policy')}}</a></li> 
-                            <li><a href="#0">{{dynamicLang('Terms of Use')}}</a></li> 
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6"> 
-                        <h5>{{dynamicLang('Ways You Can Pay')}}</h5>
-                        <p><img src="{{asset('images/payments.png')}}" alt="Footer Logo" /></p>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="input-group">
+                            <input type="email" class="input-group__field newsletter-input mb-0 rounded-0" name="EMAIL" value="" placeholder="Email address" required>
+                            <span class="input-group__btn"><button type="submit" class="btn btn-primary newsletter__submit rounded-0" name="commit">Subscribe</button></span>
+                        </div>
                     </div>
                 </div>
-                <!--/row--> 
-            </div>
-        </div> 
-        <hr class="m-0"> 
-        <div class="bottom-footer py-3">  
-            <div class="container"> 
-                <div class="row justify-content-center"> 
-                    <div class="col-lg-6">
-                        <div class="copy-right text-center">
-                            <p class="m-0">{{dynamicLang('Copyright © 2022')}} | <a href="{{URL('/')}}">GetBeds</a> | {{dynamicLang('All Rights Reserved.')}}</p>
-                        </div>
-                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-top border-0 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer-about">
+                    <img src="images/logo.png" width="200" class="mb-2" alt="MbizSpare Logo" /> 
+                    <p>Since the opening of our MbizSpare store, based in Newark, Nottinghamshire. MbizSpare clothing has gained a huge online presence and excellent reputation.</p>
+                    <img src="images/payment.png" alt="Paypal Visa Payments" /> 
+                </div>
+                <div class="col-6 col-lg-2 footer-links">
+                    <h4 class="h4 body-font">Quick Links</h4>
+                    <ul class="p-0">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms & condition</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 footer-links">
+                    <h4 class="h4 body-font">Customer Services</h4>
+                    <ul>
+                        <li><a href="#">Request Personal Data</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Orders and Returns</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 footer-contact">
+                    <h4 class="h4 body-font">Contact Us</h4>
+                    <ul class="list-inline contact-info ">
+                        <li class="list-inline-item address d-flex align-items-center mb-2"><i class="an an-map-marker-al me-1"></i> 143, sec-77, Faridabad, India - 110044</li>
+                        <li class="list-inline-item email d-flex align-items-center mb-2"><i class="an an-envelope-l me-1"></i> <b class="me-1 d-none">Email:</b> <a href="mailto:info@example.com">info@mbizspare.com</a></li>
+                        <li class="list-inline-item phone d-flex align-items-center mb-2"><i class="an an-phone-l me-1"></i> <b class="me-1 d-none">Phone:</b> <a href="tel:+919999585812">+91-8076179211</a></li>
+                    </ul> 
+                    <ul class="list-inline social-icons mt-3">
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="an an-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="an an-twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Pinterest"><i class="an an-pinterest-p" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i class="an an-instagram" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="TikTok"><i class="an an-tiktok" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp"><i class="an an-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
-    <!--/footer-->
     </div>
-    <!-- page -->
-
-    <!-- Start: Sign In Popup -->
-    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
-    <div class="small-dialog-header">
-        <h3>Sign In</h3>
-    </div>
-    <form>
-        <div class="sign-in-wrapper">
-            <a href="#0" class="social_bt facebook">Login with Facebook</a>
-            <a href="#0" class="social_bt google">Login with Google</a>
-            <div class="divider"><span>Or</span></div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control" name="email" id="email">
-                <i class="icon_mail_alt"></i>
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control" name="password" id="password" value="">
-                <i class="icon_lock_alt"></i>
-            </div>
-            <div class="clearfix add_bottom_15">
-                <div class="checkboxes float-start">
-                    <label class="container_check">Remember me
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="float-end mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-            </div>
-            <div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width"></div>
-            <div class="text-center">
-                Don’t have an account? <a href="register.html">Sign up</a>
-            </div>
-            <div id="forgot_pw">
-                <div class="form-group">
-                    <label>Please confirm login email below</label>
-                    <input type="email" class="form-control" name="email_forgot" id="email_forgot">
-                    <i class="icon_mail_alt"></i>
-                </div>
-                <p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-                <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+    <div class="footer-bottom border-0 clearfix">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center"> 
+                <div class="copytext text-transform-none">Copyright &copy; 2023 | <b>MbizSpare</b> | All Rights Reserved.</div>
+                <div class="copytext text-transform-none">Designed by: <a href="abhisan.com">Abhisan Technology</a></div>
             </div>
         </div>
-    </form>
-<!--form -->
+    </div>
 </div>
-<!-- /Sign In Popup -->
+<!-- [ Footer ] end -->
 
-<div id="toTop"></div>
-<!-- Back to top button -->
+<!-- [ Scoll Top ] start-->
+<span id="site-scroll"><i class="icon an an-chevron-up"></i></span> 

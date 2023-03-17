@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('.sweet-multiple').on('click', function() {
         swal({
                 title: "Are you sure?",
-                text: "Once deleted, you will not be able to recover this imaginary file!",
+                text: "Once deleted, you will not be able to recover this file!",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
@@ -35,7 +35,7 @@ $(document).ready(function() {
                         icon: "success",
                     });
                 } else {
-                    swal("Your imaginary file is safe!", {
+                    swal("Your file is safe!", {
                         icon: "error",
                     });
                 }

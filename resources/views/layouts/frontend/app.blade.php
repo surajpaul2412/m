@@ -4,26 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home | GetBeds</title>
     @yield('title')
     @include('layouts.partials.style')
     @yield('css')
     @livewireStyles
 </head> 
-<body>
-    @include('layouts.partials.header')
-    {{-- @include('layouts.frontend.partials.alert') --}} 
-    @include('layouts.backend.partials.alert')
+<body class="template-index"> 
 
-    @yield('content')
-    
-    @include('layouts.partials.footer')
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        @include('layouts.partials.header')
 
-    @include('layouts.partials.script')
-    <!-- SPECIFIC SCRIPTS -->
-    <script src="{{asset('js/jarallax.min.js')}}"></script>
-    <script src="{{asset('js/jarallax-video.min.js')}}"></script>
-    @yield('script')
-    @livewireScripts 
-</body> 
+        @yield('content')
+
+        @include('layouts.partials.footer')
+        @include('layouts.partials.drawer')
+        @include('layouts.partials.script')
+        @yield('script')
+        @livewireScripts 
+    </div>
+    <!--End Page Wrapper-->
+</body>
 </html>

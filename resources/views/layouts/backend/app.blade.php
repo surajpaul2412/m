@@ -6,6 +6,7 @@
     <meta name="author" content="Abhisan Technology" />
     @yield('title')
     @include('layouts.backend.partials.style')
+    <link rel="stylesheet" type="text/css" href="{{asset('backend/admin/libs/toastr/build/toastr.min.css')}}">
     @yield('css')
 </head>
 
@@ -25,6 +26,11 @@
     <script src="{{asset('backend/admin/libs/apexcharts/apexcharts.min.js')}}"></script> 
     <!-- dashboard init -->
     <script src="{{asset('backend/admin/js/pages/dashboard.init.js')}}"></script>
+
+
+    <script src="{{asset('backend/admin/libs/toastr/build/toastr.min.js')}}"></script>
+    <script src="{{asset('backend/admin/js/pages/toastr.init.js')}}"></script>
+    <script src="{{asset('backend/admin/js/app.js')}}"></script>
     @yield('script')
 </body> 
 </html>

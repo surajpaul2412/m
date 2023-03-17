@@ -1,0 +1,177 @@
+input:active, input:focus{
+    border-color: #5aa2de;
+}
+.form-control:active, .form-control:focus{
+    border-color: #5aa2de;
+}
+.counter {
+    background-color: #5ea4df;
+}
+a.link-underline.view {
+    text-decoration: none;
+    color: #5aa2de;
+}
+.payment-accordion .card .card-header .card-link:hover, .payment-accordion .card .card-header .card-link[aria-expanded="true"] {
+    color: #5aa2de;
+}
+.menubar-mobile {
+    height: 50px;
+    overflow: hidden;
+}
+.top-info-bar .item a:hover{
+    color: white !important;
+}
+.product-form .swatch .swatch-element .orange {
+    background-color: #e36947;
+}
+.swatches-size .product-form .swatch .swatchLbl.rectangle {
+    height: 40px !important;
+    min-width: 45px !important;
+}
+ 
+.product-form .swatch label {
+    display: block;
+    text-transform: capitalize !important;
+}
+a.tablink {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding: 0 0 10px;
+    background-color: transparent;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+a.tablink:hover::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+a.btn.cart-drawer.me-3 {
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+a.btn.cart-drawer.me-3:hover {
+    background: white !important;
+    color: black !important;
+    border: none !important;
+}
+
+.checkout {
+    background: var(--primary-color) !important;
+}
+.cart-continue {
+    background: var(--primary-color);
+}
+.cart-shop-continue:hover{
+    background: none;
+    color: black !important;
+}
+.checkout:hover {
+    background: #80b8e9 !important;
+}
+.customer-box h3 {
+    background-color: #5aa2de !important;
+}
+.link-color-white:hover{
+    color: white !important;
+}
+.dashboard-list li a.active, .dashboard-list li a:hover, .dashboard-list li a:focus {
+    color: #ffffff !important;
+    background-color: #5aa2de;
+}
+.tracking-steps .step.current {
+    color: #fff;
+    background-color: #5ba3de;
+}
+.tracking-steps .step.current:after {
+    border-left: 17px solid #5ba3de;
+}
+#site-scroll:hover {
+    background: #5aa2de;
+}
+.btn-link.forgotpass-link{
+    color: #5aa2de !important;
+}
+.card-total-pay, .card-total-pay ul li{
+    background-color: #fafafa;
+}
+.accordion-button:not(.collapsed) {
+    color: #5aa2de !important;
+    background-color: none !important;
+}
+.accordion-button:focus, .accordion-button:active {
+   border-color: #444 !important;
+}
+span.text-success.bg-light-success {
+    background: #caffda;
+}
+.product-strike{
+    text-decoration: line-through;
+}
+.order-listing li{
+    list-style-type: none;
+}
+.order-box-v2 .card {
+    border: 1px solid #d5d2d2;
+}
+.accordion-header .accordion-button {
+    font-size: 14px !important;
+}
+.my-account-card{
+    width: 49%;
+}
+ 
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
+
+
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .footer-top .footer-about{
+        margin-bottom: 20px;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
+
